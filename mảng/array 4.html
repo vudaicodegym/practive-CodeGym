@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array 4</title>
+</head>
+<body>
+<script>
+    let num = [142857,285714,428571,571428,714285,857142,999999];
+    let max = num[0];
+    let index = 0;
+    for (let i = 1; i < num.length; i++) {
+        if (num[i] > max) {
+            max = num[i];
+            index = i;
+        }
+    }
+    alert("phần tử lớn nhất là: " + max + "ở vị trí:  " + index)
+</script>
+</body>
+</html>
