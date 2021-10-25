@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date class</title>
+</head>
+<body>
+<!--lớp mydate gồm:-->
+<!--Thuộc tính:-->
+<!--day (ngày) sẽ nhận vào giá trị dạng số nguyên-->
+<!--month (tháng) sẽ nhận vào giá trị dạng số nguyên-->
+<!--year (năm) sẽ nhận vào giá trị dạng số nguyên-->
+<!--Phương thức:-->
+
+<!--Date(day, month, year) là phương thức khởi tạo để tạo đối tượng với 3 tham số.-->
+
+<!--getDay(), getMonth(), getYear() là phương thức trả về ngày, tháng, năm-->
+
+<!--setDay(), setMonth(), setYear() là phương thức thiết đặt lại giá trị mới cho ngày tháng năm-->
+<script>
+    // let MyDate  = function (day, month, year){
+    //     this.Day = day;
+    //     this.Month = month;
+    //     this.year = year;
+    // };
+    // this.getDay = function (){
+    //     return this.day;
+    // }
+    // this.getMonth = function (){
+    //     return this.Month;
+    // }
+    // this.getYear = function (){
+    //     return this.year;
+    // };
+    // this.setDay = function (day){
+    //     this.Day = day;
+    // }
+    // this.setMonth = function (month){
+    //     this.Month = month;
+    // }
+    // this.setYear = function (year){
+    //     this.year =  year;
+    // }
+    // let date = new MyDate(2,2,2007);
+    // let day = date.getDay(); // 2
+    // let month = date.getMonth(); // 2
+    // let year = date.getYear(); // 2007
+    // alert(day + '/'+ month + '/' + year)
+    let MyDate = function(day, month, year) {
+
+        this.day = day;
+
+        this.month = month;
+
+        this.year = year;
+
+        this.getDay = function () {
+            return this.day;
+        }
+        this.getMonth = function () {
+            return this.month;
+        }
+        this.getYear = function () {
+            return this.year;
+        }
+        this.setDay = function (day) {
+            this.day = day;
+        }
+        this.setMonth = function (month) {
+            this.month = month;
+        }
+        this.setYear = function (year) {
+            this.year = year;
+        }
+    }
+    let date = new MyDate(2, 2, 2007);
+    let day = date.getDay(); // 2
+
+    let month = date.getMonth(2); // 2
+
+    let year = date.getYear(2007); // 2007
+    alert(day + "/" + month + "/" + year);
+</script>
+</body>
+</html>
